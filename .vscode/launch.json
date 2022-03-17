@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Perl Debug", // お好みの名前を
+            "type": "perl",
+            "request": "launch",
+            "exec": "perl", // perlコマンド(パスが通っていればフルパスでなくてよい)
+            "execArgs": [], // その他指定したいperlオプション
+            "root": "${workspaceRoot}/", // 起動されるデバッガのワーキングディレクトリ
+            "inc": [
+                "${workspaceRoot}/lib"
+            ], // 追加で必要なPERL5LIBパス
+            "program": "${fileDirname}/${fileBasename}", // デバッグ対象プログラム
+            //"program": "${workspaceRoot}/${relativeFile}",    // VSCodeでその時アクティブなファイル
+            "args": [], // デバッグ対象プログラムのコマンドライン引数
+            "stopOnEntry": false // プログラムの最初のステートメントでbreak
+        }
+    ]
+}

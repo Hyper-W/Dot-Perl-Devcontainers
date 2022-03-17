@@ -1,0 +1,17 @@
+{
+    "name": "perl-dev",
+    "dockerComposeFile": [
+        "./docker-compose.yml"
+    ],
+    "service": "perl-dev",
+    "workspaceFolder": "/WORKDIR",
+    "extensions": [
+        "henriiik.vscode-perl",
+        "sfodje.perltidy",
+        "jeff-hykin.better-perl-syntax",
+        "d9705996.perl-toolbox",
+        "formulahendry.code-runner",
+        "MS-CEINTL.vscode-language-pack-ja",
+        "oderwat.indent-rainbow"
+    ]
+}
