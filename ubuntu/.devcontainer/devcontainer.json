@@ -12,8 +12,7 @@
                 "sfodje.perltidy",
                 "jeff-hykin.better-perl-syntax",
                 "d9705996.perl-toolbox",
-                "formulahendry.code-runner",
-                "oderwat.indent-rainbow"
+                "formulahendry.code-runner"
             ]
         }
     }
