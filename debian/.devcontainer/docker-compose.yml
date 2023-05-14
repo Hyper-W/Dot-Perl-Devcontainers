@@ -1,0 +1,17 @@
+services:
+  perl-dev:
+    build:
+      context: .
+      args:
+        - USER=${USER:-user} # Your User Name
+        - USER_ID=${USER_ID:-1000} # Your User ID
+        - GROUP_ID=${GROUP_ID:-1000} # Your GROUP ID
+        - DEBIAN_VERSION_NAME=${DEBIAN_VERSION_NAME:-stable} # debian code name
+    image: perl-dev:debian
+    container_name: perl-dev
+    volumes:
+      - type: bind
+        source: ../
+        target: /WORKDIR
+    tty: true
+    command: bash
